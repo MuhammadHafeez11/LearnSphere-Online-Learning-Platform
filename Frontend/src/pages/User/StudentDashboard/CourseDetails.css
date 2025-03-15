@@ -1,0 +1,143 @@
+.course-details-container {
+  padding: 2vmax;
+  background-color: #f4f4f4;
+}
+
+.course-header {
+  text-align: start;
+  margin-bottom: 3vmax;
+  padding: 2vmax;
+  background-color: #0056b3; /* Darker blue */
+  color: #f1f1f1;
+  border-radius: 0.5vmax;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-header h1 {
+  font-size: 2.5vmax;
+  color: #f1f1f1;
+}
+
+.header-para {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vmax; /* More space between items */
+  font-size: 1.2vmax;
+  color: #f1f1f1;
+}
+
+.header-para p {
+  display: flex;
+  align-items: center;
+  margin-right: 2vmax;
+}
+
+.header-para .icon {
+  margin-right: 0.5vmax;
+}
+
+.course-content {
+  display: flex;
+  gap: 2vmax;
+  flex-wrap: nowrap; /* Ensure no wrapping of course-right */
+  align-items: flex-start;
+}
+
+.course-left {
+  flex-grow: 1;
+  padding: 2vmax;
+  background-color: #fff;
+  border-radius: 0.5vmax;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-left .course-box {
+  margin-bottom: 2vmax;
+  padding: 1.5vmax;
+  background-color: #e7eaf1; /* Light box background */
+  border-radius: 0.5vmax;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.course-left h2 {
+  font-size: 2vmax;
+  margin-bottom: 1vmax;
+  color: #333;
+}
+
+.course-left p, .course-left ul li {
+  font-size: 1.2vmax;
+  color: #555;
+}
+
+.course-right {
+  width: 30%; /* Set a fixed width */
+  padding: 2vmax;
+  background-color: #fff;
+  border-radius: 0.5vmax;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.course-preview-video {
+  width: 100%;
+  height: 30vmax; 
+  margin-bottom: 1vmax;
+  border-radius: 0.5vmax;
+}
+
+.curriculum-item {
+  font-size: 1.5vmax;
+  font-weight: bold;
+  margin-bottom: 1vmax;
+  display: flex;
+  align-items: center;
+}
+
+.curriculum-item .icon {
+  margin-right: 1vmax;
+  font-size: 1.8vmax;
+}
+
+.lecture-title {
+  font-size: 1.4vmax;
+  color: #333;
+}
+
+.course-buy {
+  margin-top: 2vmax;
+}
+
+.buy-now-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 1vmax 2vmax;
+  border: none;
+  font-size: 1.5vmax;
+  cursor: pointer;
+  border-radius: 0.5vmax;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .course-content {
+      flex-direction: column;
+  }
+
+  .course-header h1 {
+      font-size: 3vmax;
+  }
+
+  .course-left h2 {
+      font-size: 2.5vmax;
+  }
+
+  .course-right {
+      width: 100%; /* Set width to 100% on smaller screens */
+  }
+}

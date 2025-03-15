@@ -1,0 +1,96 @@
+.teacher-dashboard {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  background-color: #f5f5f5;
+}
+
+.teacher-sidebar {
+  width: 15%;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fix the sidebar on the left side */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden; /* Ensure no scrolling on the sidebar */
+}
+
+.teacher-header{
+  margin-left: 20px;
+  padding: 0.5rem;
+}
+
+.teacher-content {
+  flex-grow: 1;
+  margin-left: 18%; /* Push the content to the right, accounting for sidebar width */
+  padding: 10px;
+  background-color: #ecf0f1;
+  overflow-y: auto; /* Allow scrolling of content */
+  height: 100vh; /* Full height for scrolling */
+  box-sizing: border-box;
+}
+
+.teacher-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.teacher-sidebar li {
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.teacher-sidebar li svg {
+  margin-right: 10px;
+}
+
+.teacher-sidebar li.active {
+  background-color: #34495e;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.teacher-sidebar li:hover {
+  background-color: #4e5155;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.teacher-main {
+  margin-top: 1px;
+}
+
+.teacher-overview, .teacher-courses {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .teacher-sidebar {
+    width: 30%;
+    position: fixed; /* Ensure it's still fixed on mobile screens */
+  }
+
+  .teacher-content {
+    margin-left: 30%; /* Adjust margin based on sidebar width */
+    padding: 15px;
+  }
+
+  .teacher-header {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  .teacher-sidebar li {
+    font-size: 0.9rem;
+  }
+}

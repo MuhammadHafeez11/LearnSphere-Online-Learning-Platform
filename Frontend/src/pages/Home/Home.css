@@ -1,0 +1,160 @@
+/* Overall Styling */
+.home-container {
+  font-family: 'Arial', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../images/hero-image.webp') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding-top: 1vmax; 
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3vmax;
+  margin-bottom: 1vmax;
+}
+
+.hero-content p {
+  font-size: 1.5vmax;
+}
+
+.hero-buttons {
+  margin-top: 2vmax;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 1vmax 2vmax;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 1vmax;
+}
+
+.primary-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.secondary-btn {
+  background-color: white;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+/* Section Breaks */
+section {
+  margin: 0.1vmax 0;
+}
+
+/* Popular Courses Section */
+.popular-courses {
+  padding: 4vmax;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 2vmax;
+  text-align: center;
+}
+
+.course-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.course-card h3 {
+  margin: 1vmax 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 4vmax;
+  text-align: center;
+  background-color: #343a40;
+  color: white;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.testimonial-card {
+  max-width: 300px;
+  background-color: #fff;
+  color: #343a40;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.testimonial-card h4 {
+  margin-top: 10px;
+  color: #007bff;
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 2vmax 0;
+}
+
+.footer-links {
+  margin-top: 1vmax;
+}
+
+.footer-links a {
+  color: #007bff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 60vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5vmax;
+  }
+
+  .hero-content p {
+    font-size: 1.2vmax;
+  }
+
+  .courses-grid, .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}

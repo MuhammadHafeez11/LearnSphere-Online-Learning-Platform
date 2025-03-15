@@ -1,0 +1,58 @@
+.course-watch-page {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .course-curriculum {
+    width: 25%;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ddd;
+  }
+  
+  .course-curriculum h2 {
+    margin-bottom: 20px;
+  }
+  
+  .lecture-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lecture-item:hover {
+    background-color: #eee;
+  }
+  
+  .lecture-item.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .preview-badge {
+    background-color: #4caf50;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  
+  .course-video-section {
+    width: 75%;
+    padding: 20px;
+  }
+  
+  .course-video-player {
+    width: 100%;
+    max-height: 500px;
+    margin-bottom: 15px;
+  }
+  
+  .no-lecture-selected {
+    padding: 50px;
+    text-align: center;
+    font-size: 18px;
+  }
+  

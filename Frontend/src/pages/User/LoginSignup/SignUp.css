@@ -1,0 +1,169 @@
+/* Container for the form */
+.signupContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 5vmin;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Sign-up form box */
+.signupBox {
+  background-color: white;
+  width: 50vmax; /* Increased form width */
+  padding: 5vmin;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 1vmax;
+  overflow: hidden;
+  margin: auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.signupBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading for sign-up */
+.signupHeading {
+  text-align: center;
+  color: #333;
+  font-size: 2.2vmax;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 2vmax;
+}
+
+/* Form layout */
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Form row with two inputs */
+.formRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vmax; /* Space between fields */
+  width: 100%;
+}
+
+/* Form group styling */
+.formGroup {
+  flex: 1;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 1.2vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 0.5vmax;
+  margin-bottom: 1.1vmax;
+  font-size: 1.2vmax;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.formGroup .file-input{
+  padding: 0.9vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 0.5vmax;
+  margin-bottom: 1.1vmax;
+  font-size: 1.2vmax;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.formGroup .text-area{
+  padding: 0.6vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 0.5vmax;
+  margin-bottom: 1.1vmax;
+  font-size: 1.2vmax;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  border-color: #ff6347;
+}
+
+/* Submit button */
+.signupBtn {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 1.5vmax;
+  width: 100%;
+  font-size: 1.5vmax;
+  border-radius: 0.5vmax;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.signupBtn:hover {
+  background-color: #e15337;
+  box-shadow: 0 4px 12px rgba(255, 99, 71, 0.3);
+}
+
+/* Sign-up prompt for login */
+.signupPrompt {
+  margin-top: 2vmax;
+  text-align: center;
+  font-size: 1.2vmax;
+}
+
+.signupText {
+  color: #ff6347;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signupText:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+  .signupBox {
+    width: 90vmin;
+    padding: 6vmin;
+  }
+
+  .signupHeading {
+    font-size: 4vmin;
+  }
+
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    padding: 2vmin;
+    font-size: 2vmin;
+  }
+
+  .signupBtn {
+    font-size: 3vmin;
+    padding: 2vmin;
+  }
+
+  .signupPrompt {
+    font-size: 2.5vmin;
+  }
+}
